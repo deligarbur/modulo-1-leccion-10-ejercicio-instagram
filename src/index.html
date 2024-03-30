@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Instagram</title>
+  <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body>
+  <section class="container">
+    <div class="form-title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="" class="instagram-logo">
+      <p class="instagram-login">Regístrate para ver fotos y vídeos de tus amigos.</p>
+    </div>
+    <section>
+      <form action="/signup" method="post" class="form">
+        <button class="facebook" type="button">
+          <span></span>
+          <span>Iniciar sesión con Facebook</span>
+        </button>
+        <!-- <input type="button" id="facebook" name="button" value="Iniciar sesión con Facebook"> -->
+        <div class="divisor">
+          ------- o -------
+        </div>
+
+        <div class="fields">
+          <input
+            type="text"
+            name="tel-email"
+            id="tel-email"
+            placeholder="Número de móvil o correo electrónico"
+          >
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Nombre completo"
+          >
+          <input
+            type="number"
+            name="height-cm"
+            id="height-cm"
+            maxlength="250"
+            placeholder="150 cm"
+          >
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Nombre de usuario"
+            >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+          >
+          <label for="comment">Comentario para tu perfil.</label>
+          <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+
+          <input type="hidden" id="browser" name="browser" value="Google Chrome">
+
+          <div class="polytics">
+            <p>Es posible que los usuarioa de nuestro servicio hayan subido tu información de contacto en Instagram. <strong>Más información.</strong></p>
+            <p>Al registrarte, aceptas nuestras Condiciones. Obtén más información sobre cómo recopilamos, usamos y compartimos tu información en la <strong>Política de datos</strong>, así como el uso que hacemos de las cookies y tecnologías similares en nuestra <strong>Política de cookie</strong>s.</p>
+          </div>
+
+          <label for="terms">
+            <input type="checkbox" name="terms" id="terms" >
+            Acepto los términos y condiciones
+          </label>
+
+          <input type="submit" value="Siguiente">
+        
+        </div>
+
+      </form>
+    </section>
+
+</body>
+</html>
