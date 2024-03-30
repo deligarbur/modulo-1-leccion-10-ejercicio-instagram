@@ -9,6 +9,7 @@
 */
 
 @import 'core/reset';
+@import 'layout/form-title'
 
 
 
@@ -21,19 +22,6 @@
  
 }
 
-.instagram-logo {
-    width: 200px;
-}
-
-.instagram-login {
-    text-align: center;
-    padding: 15px;
-}
-.form-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .form {
     display: flex;
